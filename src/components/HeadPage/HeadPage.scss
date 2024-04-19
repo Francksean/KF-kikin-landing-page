@@ -6,7 +6,7 @@ $white : #ffff;
 $transition-value : 0.2s;
 
 
-.Head_page{
+.head_page{
   background-color: $dark-green;
   height: fit-content;
   width: 100%;
@@ -15,6 +15,9 @@ $transition-value : 0.2s;
   justify-content: space-between;
   align-items: center;
   .navbar{
+    position: fixed;
+    z-index: 5;
+    background-color: $dark-green;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,6 +38,10 @@ $transition-value : 0.2s;
       font-weight: 800;
       letter-spacing: 1px;
       p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         position: relative;
         width: fit-content;
@@ -44,8 +51,8 @@ $transition-value : 0.2s;
           width: 0%;
           height: 100%;
           left: 0;
-          bottom: -5px;
-          border-bottom: 2px solid $white;
+          bottom: -10px;
+          border-bottom: 5px solid $white;
           transition: $transition-value;
         }
         &:hover{
@@ -90,8 +97,9 @@ $transition-value : 0.2s;
   }//navbar
 }// head page
 
-.Head_page{
+.head_page{
   .head_content{
+    margin-top: 25vh;
     width: 100%;
     height: fit-content;
     display: flex;

@@ -1,0 +1,49 @@
+.fifth_section {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #122315;
+  position: relative;
+}
+.fifth_section h1 {
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+}
+.fifth_section img {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+}
+.fifth_section img:nth-child(1) {
+  left: 10%;
+  bottom: 10%;
+}
+.fifth_section img:nth-child(2) {
+  right: 15%;
+  top: 4%;
+}
+.fifth_section img:nth-child(3) {
+  right: 15%;
+  bottom: 10%;
+}
+.fifth_section img:nth-child(4) {
+  right: 30%;
+  bottom: 3%;
+}
+.fifth_section img:nth-child(5) {
+  left: 25%;
+  top: 5%;
+}
+.fifth_section img:nth-child(6) {
+  left: 5%;
+  top: 30%;
+}
+.fifth_section img:nth-child(7) {
+  right: 5%;
+  bottom: 45%;
+}/*# sourceMappingURL=Fifth_section.css.map */

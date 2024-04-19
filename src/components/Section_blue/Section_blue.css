@@ -1,0 +1,61 @@
+.section_blue {
+  background-color: #73D3EB;
+  width: 100%;
+  padding: 10vh 0px;
+}
+.section_blue .section_top_interior {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 3vw 5vh 3vw;
+}
+.section_blue .section_top_interior .img_container {
+  background-image: url("../../assets/images/wwf_img.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: end;
+}
+.section_blue .section_top_interior .img_container h1 {
+  color: white;
+  font-size: 85px;
+  text-align: end;
+  width: 30%;
+  padding-right: 2%;
+}
+.section_blue .arr_item_container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.section_blue .arr_item_container .arr_item {
+  width: 33.3333333333%;
+  border: 1.5px solid black;
+  height: 50vh;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+.section_blue .arr_item_container .arr_item img {
+  height: 30px;
+  width: 30px;
+}
+.section_blue .arr_item_container .arr_item h2 {
+  text-align: start;
+  width: 90%;
+}
+.section_blue .brands_container {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=Section_blue.css.map */

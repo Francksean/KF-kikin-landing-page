@@ -9,7 +9,7 @@ import "../../assets/fonts/SF-Pro/SF-Pro-Display-Regular.otf"
 
 function HeadPage() {
   return (
-    <div className="Head_page">
+    <div className="head_page">
       <Navbar/>
       <div className="head_content">
         <h1>FINANCING<br/><span>THE FUTURE</span></h1>

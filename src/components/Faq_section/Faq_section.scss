@@ -1,0 +1,126 @@
+$beige : #F3EDE4;
+$black : #0000;
+
+.faq_section{
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 10vh;
+  background-color: $beige;
+  .faq_section_top{
+    width: 100%;
+    padding: 15vh 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    column-gap: 5vw;
+    .img_container{
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        &:nth-child(2){
+          position: absolute;
+          right: -10%;
+          bottom: -5%;
+          z-index: 2;
+          height: 150px;
+          width: 200px;
+        }
+        &:nth-child(3){
+          position: absolute;
+          right: -35%;
+          bottom: -10%;
+          height: 200px;
+          width: 250px;
+        }
+      }
+    }
+    .text_container{
+      padding: 5vh 0px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      justify-content: start;
+      row-gap: 3vh;
+      h1{
+        font-size: 60px;
+        width:55%;
+      }
+      p{
+        width: 50%;
+      }
+    }
+  }
+
+  .faq_section_bottom{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    row-gap: 5vh;
+    .main_faq_title{
+      width: 100%;
+      font-size: 50px;
+      text-align: start;
+      padding-left: 2vw;
+    }
+    .question_container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: start;
+      row-gap: 5vh;
+      padding-right: 5vw;
+      .question_item{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        width: 60%;
+        position: relative;
+        .infos_container{
+          display: flex;
+          flex-direction: column;
+          row-gap: 1vh;
+          p{
+            width: 80%;
+          }
+          .response{
+            display: none;
+            height: 0px;
+          }
+          .response_visible{
+            display: block;
+            height: fit-content;
+          }
+        }
+        button{
+          background: none;
+          font-size: 45px;
+          border: none;
+          transition: 0.2s;
+        }
+        .btn_rotate{
+          rotate: 45deg;
+          transition: 0.2s;
+        }
+        &::after{
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          border-bottom: 2px solid gainsboro;
+          left: 0px;
+          bottom: -10px;
+        }
+      }
+    }
+  }
+}

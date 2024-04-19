@@ -1,4 +1,4 @@
-.Head_page {
+.head_page {
   background-color: #122315;
   height: -moz-fit-content;
   height: fit-content;
@@ -8,7 +8,10 @@
   justify-content: space-between;
   align-items: center;
 }
-.Head_page .navbar {
+.head_page .navbar {
+  position: fixed;
+  z-index: 5;
+  background-color: #122315;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,7 +19,7 @@
   justify-content: space-between;
   width: 100%;
 }
-.Head_page .navbar .navbar_section {
+.head_page .navbar .navbar_section {
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
@@ -26,40 +29,44 @@
   align-items: center;
   justify-content: center;
 }
-.Head_page .navbar .navbar_middle {
+.head_page .navbar .navbar_middle {
   -moz-column-gap: 5vh;
        column-gap: 5vh;
   color: white;
   font-weight: 800;
   letter-spacing: 1px;
 }
-.Head_page .navbar .navbar_middle p {
+.head_page .navbar .navbar_middle p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
 }
-.Head_page .navbar .navbar_middle p::after {
+.head_page .navbar .navbar_middle p::after {
   content: "";
   position: absolute;
   width: 0%;
   height: 100%;
   left: 0;
-  bottom: -5px;
-  border-bottom: 2px solid white;
+  bottom: -10px;
+  border-bottom: 5px solid white;
   transition: 0.2s;
 }
-.Head_page .navbar .navbar_middle p:hover {
+.head_page .navbar .navbar_middle p:hover {
   cursor: pointer;
 }
-.Head_page .navbar .navbar_middle p:hover::after {
+.head_page .navbar .navbar_middle p:hover::after {
   width: 100%;
 }
-.Head_page .navbar .navbar_left {
+.head_page .navbar .navbar_left {
   -moz-column-gap: 2vh;
        column-gap: 2vh;
 }
-.Head_page .navbar .navbar_left button {
+.head_page .navbar .navbar_left button {
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
@@ -68,29 +75,30 @@
   font-weight: bold;
   border-radius: 5px;
 }
-.Head_page .navbar .navbar_left button:first-child {
+.head_page .navbar .navbar_left button:first-child {
   color: white;
   background: none;
   border: 2px solid white;
   transition: 0.2s;
 }
-.Head_page .navbar .navbar_left button:first-child:hover {
+.head_page .navbar .navbar_left button:first-child:hover {
   cursor: pointer;
   color: #000000;
   background-color: white;
 }
-.Head_page .navbar .navbar_left button:last-child {
+.head_page .navbar .navbar_left button:last-child {
   background-color: #54DD4A;
   color: #000000;
   border: 2px solid #54DD4A;
   transition: 0.2s;
 }
-.Head_page .navbar .navbar_left button:last-child:hover {
+.head_page .navbar .navbar_left button:last-child:hover {
   scale: 1.05;
   box-shadow: 0px 0px 25px 5px #54DD4A;
 }
 
-.Head_page .head_content {
+.head_page .head_content {
+  margin-top: 25vh;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -100,14 +108,14 @@
   align-items: center;
   justify-content: center;
 }
-.Head_page .head_content h1 {
+.head_page .head_content h1 {
   text-align: center;
   font-weight: bolder;
   font-size: 100px;
   color: white;
   letter-spacing: -5px;
 }
-.Head_page .head_content h1 span {
+.head_page .head_content h1 span {
   color: #54DD4A;
 }
 
