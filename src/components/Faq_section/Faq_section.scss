@@ -29,6 +29,9 @@ $black : #0000;
           z-index: 2;
           height: 150px;
           width: 200px;
+          @media screen and (max-width:700px) {
+            display: none;
+          }
         }
         &:nth-child(3){
           position: absolute;
@@ -36,6 +39,9 @@ $black : #0000;
           bottom: -10%;
           height: 200px;
           width: 250px;
+          @media screen and (max-width:700px) {
+            display: none;
+          }
         }
       }
     }
@@ -54,6 +60,23 @@ $black : #0000;
         width: 50%;
       }
     }
+    @media screen and (max-width:1500px) {
+      flex-direction: column;
+      padding: 0vh 0px;
+      .text_container{
+        align-items: center;
+        width: 100%;
+        h1{
+          text-align: center;
+          width: 100%;
+        }
+        p{
+          text-align: justify;
+          width: 100%;
+          padding: 0px 5vw;
+        }
+      }
+    }
   }
 
   .faq_section_bottom{
@@ -64,6 +87,7 @@ $black : #0000;
     align-items: center;
     justify-content: start;
     row-gap: 5vh;
+    
     .main_faq_title{
       width: 100%;
       font-size: 50px;
@@ -78,6 +102,9 @@ $black : #0000;
       justify-content: start;
       row-gap: 5vh;
       padding-right: 5vw;
+      @media screen and (max-width:1200px) {
+        align-items: start;
+      }
       .question_item{
         display: flex;
         flex-direction: row;
@@ -91,20 +118,32 @@ $black : #0000;
           row-gap: 1vh;
           p{
             width: 80%;
+            font-size: 0;
             height: 0px;
-            opacity: 0;
-            transition: 0.4s;
+            transition: 0.1s ease-in-out;
           }
           .response_visible{
             height: fit-content;
-            opacity: 1;
+            font-size: 15px;
             display: block;
             height: fit-content;
+          }
+          @media screen and (max-width:1200px) {
+            row-gap: 2vh;
+            h1{
+              font-size: 20px;
+              width: 70%;
+            }
+            p{
+              width: 90%;
+              text-align: justify;
+            }
           }
         }
         button{
           height: fit-content;
           font-size: 50px;
+          background: none;
           border: none;
           transition: 0.2s;
         }
@@ -121,7 +160,11 @@ $black : #0000;
           left: 0px;
           bottom: -10px;
         }
-      }
-    }
-  }
+        @media screen and (max-width:1200px) {
+          width: 100%;
+          padding-left: 2vw;
+        }
+      }//question item
+    }// question container
+  }// faq section bottom
 }

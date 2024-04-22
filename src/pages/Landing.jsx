@@ -16,11 +16,11 @@ function Landing() {
       {/* <HeadPage/>
       <Second_section/>
       <div className="divider"></div>
-      <Third_section/> */}
+      <Third_section/>
       <Section_blue/>
-      {/* <Fifth_section/>
+      <Fifth_section/> */}
       <Faq_section/>
-      <Footer/> */}
+      {/* <Footer/> */}
     </div>
   )
 }
