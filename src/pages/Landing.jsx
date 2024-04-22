@@ -13,14 +13,14 @@ import "./Landing.css"
 function Landing() {
   return (
     <div className="Landing">
-      {/* <HeadPage/>
-      <Second_section/>
+      {/* <HeadPage/> */}
+      {/* <Second_section/> */}
       <div className="divider"></div>
       <Third_section/>
       <Section_blue/>
-      <Fifth_section/> */}
-      <Faq_section/>
-      {/* <Footer/> */}
+      {/* <Fifth_section/> */}
+      {/* <Faq_section/> */}
+      <Footer/>
     </div>
   )
 }

@@ -52,4 +52,25 @@ $dark-green : #122315;
       }
     }
   }
+  @media screen and (max-width:1200px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5vh;
+    height: fit-content;
+    padding: 5vh 0px;
+    .footer_left{
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2vh;
+      .footer_left_infos{
+        align-items: center;
+      }
+    }
+    .footer_right{
+      flex-direction: column;
+      row-gap: 2vh;
+      
+    }
+  }
 }

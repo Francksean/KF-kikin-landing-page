@@ -51,4 +51,27 @@
 .footer .footer_right a:hover {
   color: black;
   background-color: white;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 5vh 0px;
+  }
+  .footer .footer_left {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+  }
+  .footer .footer_left .footer_left_infos {
+    align-items: center;
+  }
+  .footer .footer_right {
+    flex-direction: column;
+    row-gap: 2vh;
+  }
 }/*# sourceMappingURL=Footer.css.map */
