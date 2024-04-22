@@ -24,13 +24,19 @@
   font-size: 90px;
   text-align: center;
   letter-spacing: -5px;
+  padding: 0px 2vw;
+}
+@media screen and (max-width: 1200px) {
+  .second_section .section2_content h1 {
+    font-size: 45px;
+  }
 }
 .second_section .section2_content button {
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 10px 10px;
+  padding: 20px 15px;
   font-weight: bold;
   border-radius: 5px;
   background-color: #54DD4A;
@@ -60,4 +66,26 @@
 .second_section img:nth-child(4) {
   bottom: 7%;
   left: 25%;
+}
+@media screen and (max-width: 1200px) {
+  .second_section img:nth-child(1) {
+    scale: 0.6;
+    top: -15%;
+  }
+  .second_section img:nth-child(2) {
+    scale: 0.4;
+  }
+  .second_section img:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 985px) {
+  .second_section img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .second_section {
+    height: 50vw;
+  }
 }/*# sourceMappingURL=Second_section.css.map */

@@ -24,11 +24,15 @@ $black : #000000;
       font-size: 90px;
       text-align: center;
       letter-spacing: -5px;
+      padding: 0px 2vw;
+      @media screen and (max-width:1200px) {
+        font-size: 45px;
+      }
     }
     button{
       height: fit-content;
       width: fit-content;
-      padding: 10px 10px;
+      padding: 20px 15px;
       font-weight: bold;
       border-radius: 5px;
       background-color: $green;
@@ -59,5 +63,24 @@ $black : #000000;
       bottom: 7%;
       left: 25%;
     }
+    @media screen and (max-width:1200px) {
+      &:nth-child(1){
+        scale: 0.6;
+        top: -15%;
+      }
+      &:nth-child(2){
+        scale: 0.4;
+       
+      }
+      &:nth-child(3){
+        display: none;
+      }
+    }
+    @media screen and (max-width:985px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width:1000px) {
+    height: 50vw;
   }
 }
