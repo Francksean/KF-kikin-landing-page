@@ -26,12 +26,12 @@ function Section_blue() {
         <Arr_item src={icon2} text={"WHO NEED TO PAY TO SUPPLIER AROUND THE WORLD"} />
         <Arr_item src={icon3} text={"WHO CAN DEMONSTRATE SUSTAINABILITY EFFROTS"} />
       </div>
-      <div className="brands_container">
+      {/* <div className="brands_container">
         <img src={brand1} alt="" />
         <img src={brand2} alt="" />
         <img src={brand3} alt="" />
         <img src={brand4} alt="" />
-      </div>
+      </div> */}
     </div>
   )
 }

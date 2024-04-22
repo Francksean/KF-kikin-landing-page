@@ -15,10 +15,10 @@ function Landing() {
     <div className="Landing">
       {/* <HeadPage/>
       <Second_section/>
-      <div className="divider"></div> */}
-      <Third_section/>
-      {/* <Section_blue/>
-      <Fifth_section/>
+      <div className="divider"></div>
+      <Third_section/> */}
+      <Section_blue/>
+      {/* <Fifth_section/>
       <Faq_section/>
       <Footer/> */}
     </div>
