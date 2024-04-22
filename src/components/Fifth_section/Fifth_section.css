@@ -7,6 +7,7 @@
   justify-content: center;
   background-color: #122315;
   position: relative;
+  overflow-y: hidden;
 }
 .fifth_section h1 {
   width: 50%;
@@ -14,10 +15,17 @@
   color: white;
   font-size: 45px;
 }
+@media screen and (max-width: 1200px) {
+  .fifth_section h1 {
+    width: 100%;
+    padding: 0px 5vw;
+  }
+}
 .fifth_section img {
   position: absolute;
   height: 170px;
   width: 170px;
+  transition: 0.4s;
 }
 .fifth_section img:nth-child(1) {
   left: 10%;
@@ -46,4 +54,16 @@
 .fifth_section img:nth-child(7) {
   right: 5%;
   bottom: 45%;
+}
+@media screen and (max-width: 1200px) {
+  .fifth_section img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .fifth_section {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 15vh 0px;
+  }
 }/*# sourceMappingURL=Fifth_section.css.map */

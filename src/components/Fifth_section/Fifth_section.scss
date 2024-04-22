@@ -10,16 +10,22 @@ $dark-green : #122315;
   justify-content: center;
   background-color: $dark-green;
   position: relative;
+  overflow-y: hidden;
   h1{
     width: 50%;
     text-align: center;
     color: white;
     font-size: 45px;
+    @media screen and (max-width:1200px) {
+      width: 100%;
+      padding: 0px 5vw;
+    }
   }
   img{
     position: absolute;
     height: 170px;
     width: 170px;
+    transition: 0.4s;
     &:nth-child(1){
       left: 10%;
       bottom: 10%;
@@ -48,5 +54,12 @@ $dark-green : #122315;
       right: 5%;
       bottom: 45%;
     }
+    @media screen and (max-width:1200px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width:1200px) {
+    height: fit-content;
+    padding: 15vh 0px;
   }
 }

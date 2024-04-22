@@ -29,7 +29,7 @@ $black : #0000;
           z-index: 2;
           height: 150px;
           width: 200px;
-          @media screen and (max-width:700px) {
+          @media screen and (max-width:1024px) {
             display: none;
           }
         }
@@ -39,8 +39,16 @@ $black : #0000;
           bottom: -10%;
           height: 200px;
           width: 250px;
-          @media screen and (max-width:700px) {
+          @media screen and (max-width:1024px) {
             display: none;
+          }
+        }
+      }
+      @media screen and (max-width:1024px) {
+        width: 100%;
+        img{
+          &:nth-child(1){
+            width: 100%;
           }
         }
       }
@@ -76,6 +84,9 @@ $black : #0000;
           padding: 0px 5vw;
         }
       }
+    }
+    @media screen and (max-width:1500px) {
+      align-items: center;
     }
   }
 
