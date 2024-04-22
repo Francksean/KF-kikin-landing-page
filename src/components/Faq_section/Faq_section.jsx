@@ -73,7 +73,7 @@ function Question_item({ question, response }) {
     <div className="question_item">
       <div className="infos_container">
         <h1>{question}</h1>
-        <p className={`response ${resClass}`}>{response}</p>
+        <p className={`${resClass}`}>{response}</p>
       </div>
       <button className={`${resBtnClass}`} onClick={()=>setIsResponseVisible(!isResponseVisible)}>
         +

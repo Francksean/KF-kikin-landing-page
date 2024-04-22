@@ -95,19 +95,21 @@
 }
 .faq_section .faq_section_bottom .question_container .question_item .infos_container p {
   width: 80%;
-}
-.faq_section .faq_section_bottom .question_container .question_item .infos_container .response {
-  display: none;
   height: 0px;
+  opacity: 0;
+  transition: 0.4s;
 }
 .faq_section .faq_section_bottom .question_container .question_item .infos_container .response_visible {
-  display: block;
   height: -moz-fit-content;
+  height: fit-content;
+  opacity: 1;
+  display: block;
   height: fit-content;
 }
 .faq_section .faq_section_bottom .question_container .question_item button {
-  background: none;
-  font-size: 45px;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 50px;
   border: none;
   transition: 0.2s;
 }

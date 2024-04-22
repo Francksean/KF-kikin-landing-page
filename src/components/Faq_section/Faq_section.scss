@@ -91,19 +91,20 @@ $black : #0000;
           row-gap: 1vh;
           p{
             width: 80%;
-          }
-          .response{
-            display: none;
             height: 0px;
+            opacity: 0;
+            transition: 0.4s;
           }
           .response_visible{
+            height: fit-content;
+            opacity: 1;
             display: block;
             height: fit-content;
           }
         }
         button{
-          background: none;
-          font-size: 45px;
+          height: fit-content;
+          font-size: 50px;
           border: none;
           transition: 0.2s;
         }
