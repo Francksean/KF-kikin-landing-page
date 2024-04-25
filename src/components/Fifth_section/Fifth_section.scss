@@ -20,6 +20,9 @@ $dark-green : #122315;
       width: 100%;
       padding: 0px 5vw;
     }
+    @media screen and (max-width:900px) {
+      font-size: 30px;
+    }
   }
   img{
     position: absolute;

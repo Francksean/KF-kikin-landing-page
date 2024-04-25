@@ -1,16 +1,23 @@
+//images
 import kikin_logo_2 from "../../assets/images/kikin_logo_2.png"
+import menu_icon from "../../assets/images/menu_icon.png"
 
 //styles
 import "./HeadPage.css"
 
 //fonts
 import "../../assets/fonts/SF-Pro/SF-Pro-Display-Regular.otf"
+import { useEffect, useState } from "react"
 
 
 function HeadPage() {
+  const [ isMobile, setIsMobile ] = useState(false)
+
   return (
     <div className="head_page">
-      <Navbar/>
+      {
+        screen.width >= 1024 ? <NavbarDesktop/> : <NavbarMobile/>
+      }
       <div className="head_content">
         <h1>FINANCING<br/><span>THE FUTURE</span></h1>
       </div>      
@@ -23,7 +30,7 @@ function HeadPage() {
 
 export default HeadPage
 
-function Navbar() {
+function NavbarDesktop() {
   return(
     <div className="navbar">
       <div className="navbar_section navbar_right">
@@ -37,6 +44,35 @@ function Navbar() {
       <div className="navbar_section navbar_left">
         <button>LOG IN</button>
         <button>GET FUNDING</button>
+      </div>
+    </div>
+  )
+}
+
+function NavbarMobile() {
+  const [ menuVisible, setMenuVisible ] = useState(false)
+  const [ className, setClassName ] = useState("")
+
+  useEffect(()=>{
+    menuVisible ? setClassName("navbar_mobile_menu_container_visble") : setClassName("")
+  },[menuVisible])
+
+  return(
+    <div className="navbar_mobile">
+      <div className="navbar_mobile_top">
+        <div className="navbar_mobile_right">
+          <img src={kikin_logo_2} alt="logo_texte_kikin" />
+        </div>
+        <button onClick={()=>{setMenuVisible(!menuVisible)}}>
+          <img src={menu_icon} alt="" />
+        </button>
+      </div>
+      <div className={`navbar_mobile_menu_container ${className}`}>
+        <p>HOW IT WORKS</p>
+        <p>PRICING</p>
+        <p>BLOG</p>
+        <p>LOG IN</p>
+        <p>GET FUNDING</p>
       </div>
     </div>
   )

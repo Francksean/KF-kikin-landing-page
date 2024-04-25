@@ -21,6 +21,11 @@
     padding: 0px 5vw;
   }
 }
+@media screen and (max-width: 900px) {
+  .fifth_section h1 {
+    font-size: 30px;
+  }
+}
 .fifth_section img {
   position: absolute;
   height: 170px;
