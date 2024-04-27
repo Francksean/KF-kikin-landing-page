@@ -116,6 +116,9 @@ $transition-value : 0.2s;
       span{
         color: $green;
       }
+      @media screen and (max-width:1200px) {
+        font-size: 60px;
+      }
     }
   }
 }
@@ -147,12 +150,22 @@ $transition-value : 0.2s;
       box-shadow: 0px 0px 25px 5px $green;
     }        
   }
+  @media screen and (max-width:1024px) {
+    // background-size: cover 100vw;
+    height: 18vh;
+    padding-top: 2vh;
+    button{
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
 }
 
 
 
 .navbar_mobile{
   position: fixed;
+  z-index: 5;
   height: 10vh;
   width: 100vw;
   background-color: $dark-green;
@@ -191,7 +204,7 @@ $transition-value : 0.2s;
     justify-content: center;
     color: $white;
     padding: 3vh 2vw;
-    transition: 0.3s;
+    transition: 0.1s;
     border-top: 1px solid $white;
     z-index: 2;
     p{
@@ -202,5 +215,6 @@ $transition-value : 0.2s;
   .navbar_mobile_menu_container_visble{
     transform: translateY(-100%);
     position: absolute;
+    opacity: 0;
   }
 }

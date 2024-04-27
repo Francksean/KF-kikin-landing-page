@@ -11,7 +11,6 @@ import { useEffect, useState } from "react"
 
 
 function HeadPage() {
-  const [ isMobile, setIsMobile ] = useState(false)
 
   return (
     <div className="head_page">
@@ -54,7 +53,7 @@ function NavbarMobile() {
   const [ className, setClassName ] = useState("")
 
   useEffect(()=>{
-    menuVisible ? setClassName("navbar_mobile_menu_container_visble") : setClassName("")
+    menuVisible ? setClassName("") : setClassName("navbar_mobile_menu_container_visble")
   },[menuVisible])
 
   return(
