@@ -1,3 +1,6 @@
+import { useState, useRef, useEffect } from 'react'
+import gsap from 'gsap'
+
 //images
 import kikin_logo_2 from "../../assets/images/kikin_logo_2.png"
 import menu_icon from "../../assets/images/menu_icon.png"
@@ -7,7 +10,6 @@ import "./HeadPage.css"
 
 //fonts
 import "../../assets/fonts/SF-Pro/SF-Pro-Display-Regular.otf"
-import { useEffect, useState } from "react"
 
 
 function HeadPage() {
@@ -30,15 +32,32 @@ function HeadPage() {
 export default HeadPage
 
 function NavbarDesktop() {
+
+  const navbarItemRef = useRef(null)
+  const logoRef = useRef(null)
+  const navButtonRef = useRef(null)
+
+  useEffect(()=>{
+
+    const navbarItemElem = navbarItemRef.current
+    const logoElem = logoRef.current
+    const navButtonElem = navButtonRef.current
+
+    const tl = gsap.timeline()
+
+    tl.
+
+  },[])
+
   return(
     <div className="navbar">
       <div className="navbar_section navbar_right">
         <img src={kikin_logo_2} alt="logo_texte_kikin" />
       </div>
       <div className="navbar_section navbar_middle">
-        <p>HOW IT WORKS</p>
-        <p>PRICING</p>
-        <p>BLOG</p>
+        <p ref={navbarItemRef}>HOW IT WORKS</p>
+        <p ref={navbarItemRef}>PRICING</p>
+        <p ref={navbarItemRef}>BLOG</p>
       </div>
       <div className="navbar_section navbar_left">
         <button>LOG IN</button>
@@ -51,6 +70,7 @@ function NavbarDesktop() {
 function NavbarMobile() {
   const [ menuVisible, setMenuVisible ] = useState(false)
   const [ className, setClassName ] = useState("")
+
 
   useEffect(()=>{
     menuVisible ? setClassName("") : setClassName("navbar_mobile_menu_container_visble")
