@@ -129,15 +129,19 @@ $black : #0000;
           row-gap: 1vh;
           p{
             width: 80%;
-            font-size: 0;
+            font-size: 15px;
+            opacity: 0;
             height: 0px;
-            transition: 0.1s ease-in-out;
+            transform: translateY(-20px);
+            transition: 0.05s ease-in-out;
           }
           .response_visible{
             height: fit-content;
-            font-size: 15px;
             display: block;
+            transform: translateY(0px);
+            opacity: 1;
             height: fit-content;
+            transition: 0.3s ease-in-out;
           }
           @media screen and (max-width:1200px) {
             row-gap: 2vh;

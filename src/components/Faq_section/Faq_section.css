@@ -142,16 +142,20 @@
 }
 .faq_section .faq_section_bottom .question_container .question_item .infos_container p {
   width: 80%;
-  font-size: 0;
+  font-size: 15px;
+  opacity: 0;
   height: 0px;
-  transition: 0.1s ease-in-out;
+  transform: translateY(-20px);
+  transition: 0.05s ease-in-out;
 }
 .faq_section .faq_section_bottom .question_container .question_item .infos_container .response_visible {
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 15px;
   display: block;
+  transform: translateY(0px);
+  opacity: 1;
   height: fit-content;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   .faq_section .faq_section_bottom .question_container .question_item .infos_container {

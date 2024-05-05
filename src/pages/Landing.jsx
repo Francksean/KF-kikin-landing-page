@@ -7,10 +7,13 @@ import Fifth_section from "../components/Fifth_section/Fifth_section"
 import Faq_section from "../components/Faq_section/Faq_section"
 import Footer from "../components/Footer/Footer"
 
+
 //styles
 import "./Landing.css"
+import { useEffect } from "react"
 
 function Landing() {
+
   return (
     <div className="Landing">
       <HeadPage/>
