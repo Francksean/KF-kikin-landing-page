@@ -39,7 +39,7 @@ function Third_section_unit({ src, nbr, text }) {
     const tl = gsap.timeline({
       scrollTrigger : {
         trigger : unitLeftElem,
-        start : "10% center",
+        start : "5% center",
         toggleActions : "play pause resume reverse"
       },
       defaults:{
