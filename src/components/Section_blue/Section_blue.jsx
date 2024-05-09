@@ -55,7 +55,7 @@ function Arr_item({ src, text }) {
 
     let fromWhere 
 
-    if(innerWidth <= 1024){
+    if(innerWidth >= 1024){
       fromWhere = "100vw"
     }else{
       fromWhere = "50vh"
