@@ -44,22 +44,46 @@ function Third_section_unit({ src, nbr, text }) {
     const unitLeftElem = unitLeftRef.current;
     const unitRightElem = unitRightRef.current;
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: unitLeftElem,
-        toggleActions: "play pause resume reverse",
-      },
-      defaults: {
-        duration: 1,
-        ease: "power1",
-      },
-    });
+    if(screen.width <= 1024){
 
-    tl.fromTo(
-      unitLeftElem,
-      { x: -200, opacity: 0 },
-      { x: 0, opacity: 1 }
-    ).fromTo(unitRightElem, { x: 200, opacity: 0 }, { x: 0, opacity: 1 }, "<");
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: unitLeftElem,
+          start : "20% center",
+          toggleActions: "play pause resume reverse",
+        },
+        defaults: {
+          duration: 1,
+          ease: "power1",
+        },
+      });
+  
+      tl.fromTo(
+        unitLeftElem,
+        { x: -200, opacity: 0 },
+        { x: 0, opacity: 1 }
+      ).fromTo(unitRightElem, { x: 200, opacity: 0 }, { x: 0, opacity: 1 }, "<");
+
+    }else{
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: unitLeftElem,
+          toggleActions: "play pause resume reverse",
+        },
+        defaults: {
+          duration: 1,
+          ease: "power1",
+        },
+      });
+  
+      tl.fromTo(
+        unitLeftElem,
+        { x: -200, opacity: 0 },
+        { x: 0, opacity: 1 }
+      ).fromTo(unitRightElem, { x: 200, opacity: 0 }, { x: 0, opacity: 1 }, "<");
+
+    }
+
   }, []);
 
   return (

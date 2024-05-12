@@ -95,6 +95,9 @@ $transition-value : 0.2s;
       }//nvabar left button
     }// navbar left
   }//navbar
+  @media screen and (max-width : 1024px) {
+    height: 100vh;
+  }
 }// head page
 
 .head_page{
@@ -152,7 +155,7 @@ $transition-value : 0.2s;
   }
   @media screen and (max-width:1024px) {
     // background-size: cover 100vw;
-    height: 18vh;
+    height: 45vh;
     padding-top: 2vh;
     button{
       padding: 10px;

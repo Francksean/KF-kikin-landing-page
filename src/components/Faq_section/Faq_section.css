@@ -1,3 +1,7 @@
+@font-face {
+  font-family: sf-pro-light;
+  src: url("../../assets/fonts/SF-Pro/SF-Pro-Rounded-Light.otf") format(opentype);
+}
 .faq_section {
   width: 100%;
   height: -moz-fit-content;
@@ -71,6 +75,8 @@
   width: 55%;
 }
 .faq_section .faq_section_top .text_container p {
+  font-family: sf-pro-light;
+  font-size: 25px;
   width: 50%;
 }
 @media screen and (max-width: 1500px) {
@@ -87,7 +93,7 @@
     width: 100%;
   }
   .faq_section .faq_section_top .text_container p {
-    text-align: center;
+    text-align: justify;
     width: 100%;
     padding: 0px 5vw;
   }
@@ -141,8 +147,9 @@
   row-gap: 1vh;
 }
 .faq_section .faq_section_bottom .question_container .question_item .infos_container p {
+  font-family: sf-pro-light;
   width: 80%;
-  font-size: 15px;
+  font-size: 20px;
   opacity: 0;
   height: 0px;
   transform: translateY(-20px);

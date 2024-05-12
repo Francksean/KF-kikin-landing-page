@@ -65,7 +65,7 @@ function Arr_item({ src, text }) {
     });
 
 
-    if(innerWidth >= 1024){
+    if(screen.width >= 1024){
 
       tl.fromTo(
         ".arr_item",
@@ -76,8 +76,8 @@ function Arr_item({ src, text }) {
     }else{
       tl.fromTo(
         ".arr_item",
-        { x: "100vw" ,y: "50vh" },
-        { x: 0 , y: 0, stagger: { each: 0.1 } }
+        { y: "50vh" },
+        { y: 0, stagger: { each: 0.1 } }
       )
     }
 

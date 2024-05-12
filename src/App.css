@@ -3,6 +3,7 @@
   src: url("./assets/fonts/SF-Pro/SF-Pro-Text-Black.otf") format(opentype);
 }
 
+
 *{
   font-family: sf-pro;
 }

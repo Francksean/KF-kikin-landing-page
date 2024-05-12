@@ -96,6 +96,11 @@
   scale: 1.05;
   box-shadow: 0px 0px 25px 5px #54DD4A;
 }
+@media screen and (max-width: 1024px) {
+  .head_page {
+    height: 100vh;
+  }
+}
 
 .head_page .head_content {
   margin-top: 25vh;
@@ -156,7 +161,7 @@
 }
 @media screen and (max-width: 1024px) {
   .header_bottom {
-    height: 18vh;
+    height: 45vh;
     padding-top: 2vh;
   }
   .header_bottom button {
