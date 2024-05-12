@@ -53,13 +53,6 @@ export default Section_blue;
 function Arr_item({ src, text }) {
   useEffect(() => {
 
-    let fromWhere 
-
-    if(innerWidth >= 1024){
-      fromWhere = "100vw"
-    }else{
-      fromWhere = "50vh"
-    }
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".arr_item",
@@ -71,11 +64,25 @@ function Arr_item({ src, text }) {
       },
     });
 
+
+    if(innerWidth >= 1024){
+
+      tl.fromTo(
+        ".arr_item",
+        { x: "100vw" },
+        { x: 0, stagger: { each: 0.1 } }
+      )
+
+    }else{
+      tl.fromTo(
+        ".arr_item",
+        { x: "100vw" ,y: "50vh" },
+        { x: 0 , y: 0, stagger: { each: 0.1 } }
+      )
+    }
+
+
     tl.fromTo(
-      ".arr_item",
-      { x: fromWhere },
-      { x: 0, stagger: { each: 0.1 } }
-    ).fromTo(
       ".arr_sub_item",
       { y: 50, opacity: 0 },
       {

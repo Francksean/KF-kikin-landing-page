@@ -15,7 +15,7 @@ import { useEffect } from "react"
 function Landing() {
 
   return (
-    <div className="Landing">
+    <div className="landing">
       <HeadPage/>
       <Second_section/>
       <div className="divider"></div>
